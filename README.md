@@ -11,6 +11,9 @@ ASIX M06-ASO Escola del treball de barcelona
 
 * **pamhost:18base** host pam que autentica els usuaris contra ldap. Usar el container *ldapserver:18group*.
 
+* **pamhost:18auth** host pam amb authenticació ldap. utilitza l'ordre authconfig per configurar l'autenticació.
+º
+
 #### Execució
 
 ```

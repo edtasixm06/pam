@@ -38,7 +38,20 @@ pam_mount.conf.xml (només a pere se li genera el  ramdisk):
 getent passwd
 getent group
 
+# login pau
+pam_mount password:
+Creating directory '/tmp/home/pau'.
+$ exit
 
+# login pere
+pam_mount password:
+Creating directory '/tmp/home/pere'.
 
+$ df -h
+Filesystem                                                                                       Size  Used Avail Use% Mounted on
+none                                                                                              10M     0   10M   0% /tmp/home/pere/test
+
+$ mount -t tmpfs
+none on /tmp/home/pere/test type tmpfs (rw,relatime,seclabel,size=10240k,mode=755,uid=5001,gid=100)
 ```
 

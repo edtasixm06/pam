@@ -13,6 +13,11 @@ ASIX M06-ASO Escola del treball de barcelona
 
 * **pamhost:18auth** host pam amb authenticació ldap. utilitza l'ordre authconfig per configurar l'autenticació.
 
+ * **hostpam:18mount** host pam amb authenticació ldap. utilitza l'ordre authconfig per
+configurar l'autenticació i a més a més crea els home dels usuaris i munta un tmpfs als usuaris.
+Atenció, per poder realitzar el mount cal que el container es generi amb l'opció **--privileged**.
+
+
 #### Execució
 
 ```

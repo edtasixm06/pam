@@ -26,7 +26,7 @@ session     required      pam_unix.so
 session     optional      pam_ldap.so
 ```
 
-pam_mount.conf.xml (només a pere se li genera el  ramdisk
+pam_mount.conf.xml (només a pere se li genera el  ramdisk):
 ```
 <volume user="pere" fstype="tmpfs" mountpoint="~/test" options="size=10M,uid=%(USER),mode=0755" />
 ```

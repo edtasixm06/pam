@@ -22,7 +22,7 @@ bash /opt/docker/auth.sh
 cp /opt/docker/nslcd.conf /etc/nslcd.conf
 cp /opt/docker/ldap.conf /etc/openldap/ldap.conf
 cp /opt/docker/nsswitch.conf /etc/nsswitch.conf
-cp -rf /opt/docker/system-auth-edt /etc/pam.d/system-auth-edt
-cp -rf /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
-ln -sf /etc/pam.d/system-auth /etc/pam.d/system-auth-edt
+cp /opt/docker/system-auth-edt /etc/pam.d/system-auth-edt
+cp /opt/docker/pam_mount.conf.xml /etc/security/pam_mount.conf.xml
+ln -sf /etc/pam.d/system-auth-edt /etc/pam.d/system-auth
 
